@@ -38,6 +38,9 @@ class DoctoresListaVC: UIViewController, UITableViewDelegate, UITableViewDataSou
         tableView.delegate = self
         tableView.dataSource = self
         tableView.rowHeight = 72
+        tableView.backgroundColor = UIColor(hex: "#F0F4F5")
+        tableView.separatorStyle = .none
+        navigationController?.navigationBar.tintColor = UIColor(hex: "#5DAEAF")
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
